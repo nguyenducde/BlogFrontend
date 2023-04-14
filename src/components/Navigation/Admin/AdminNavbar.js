@@ -37,7 +37,7 @@ const AdminNavbar = ({ isLogin }) => {
   //logout
   const dispatch = useDispatch();
   return (
-    <Disclosure as="nav" className="bg-green-800">
+    <Disclosure as="nav" className="bg-green-800 sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ const AdminNavbar = ({ isLogin }) => {
                   <BookOpenIcon className="h-10 w-10 text-yellow-200" />
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
-                  {navigation.map(item => (
+                  {navigation.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
@@ -132,7 +132,7 @@ const AdminNavbar = ({ isLogin }) => {
                             static
                             className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                           >
-                            {userNavigation.map(item => (
+                            {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
                                   <a
@@ -159,7 +159,7 @@ const AdminNavbar = ({ isLogin }) => {
 
           <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navigation.map(item => (
+              {navigation.map((item) => (
                 <Link
                   to={`${item.href}`}
                   key={item.name}
@@ -196,7 +196,7 @@ const AdminNavbar = ({ isLogin }) => {
                 </div>
               </div>
               <div className="mt-3 px-2 space-y-1 sm:px-3">
-                {userNavigation.map(item => (
+                {userNavigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
