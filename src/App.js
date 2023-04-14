@@ -22,6 +22,7 @@ import UsersList from "./components/Users/UsersList/UsersList";
 import UpdatePassword from "./components/Users/PasswordManagement/UpdatePassword";
 import ResetPasswordForm from "./components/Users/PasswordManagement/ResetPasswordForm";
 import ResetPassword from "./components/Users/PasswordManagement/ResetPassword";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
       </Switch>
+      <Footer/>
     </BrowserRouter>
   );
 }

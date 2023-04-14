@@ -1,9 +1,10 @@
 import React from "react";
-import poster from "../../img/poster.png";
+import poster from "../../img/avatar.jpg";
+import "./style.css"
 const HomePage = () => {
   return (
     <>
-      <section className="pb-10 bg-gray-800">
+      <section className="pb-10 backgroud_color">
         <div className="relative container px-4   mx-auto">
           <div className="flex flex-wrap items-center -mx-4 mb-10 2xl:mb-14">
             <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
@@ -11,8 +12,8 @@ const HomePage = () => {
                 Create posts to educate
               </span>
               <h2 className="max-w-2xl mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">
-                Pen down your ideas{" "}
-                <span className="text-yellow-500">By creating a post</span>
+                {/* Pen down your ideas{" "} */}
+                <span className="text-yellow-500">I'm a web-developer</span>
               </h2>
               <p className="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">
                 Your post must be free from racism and unhealthy words
@@ -24,8 +25,12 @@ const HomePage = () => {
                 Buy This Course
               </a>
             </div>
-            <div className="w-full lg:w-1/2 px-4">
-              <img className="w-full" src={poster} alt={poster} />
+            <div className="w-full lg:w-1/2 px-4 content-center">
+              <img
+                className="shadow-md rounded-full w-1/2"
+                src={poster}
+                alt={poster}
+              />
             </div>
           </div>
         </div>
