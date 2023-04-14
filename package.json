@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "postcss": "^8.4.21",
+    // "postcss": "^8.4.21",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
 }
