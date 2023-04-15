@@ -33,7 +33,7 @@ const PrivateNavbar = ({ isLogin }) => {
   //logout
   const dispatch = useDispatch();
   return (
-    <Disclosure as="nav" className="menu_color-style sticky top-0 z-50 ">
+    <Disclosure as="nav" className="sticky top-0 z-50 ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +41,7 @@ const PrivateNavbar = ({ isLogin }) => {
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg_menu_color-style focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -61,8 +61,8 @@ const PrivateNavbar = ({ isLogin }) => {
                       to={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          ? "bg-purple-400 text-white"
+                          : "text-gray-500 hover:bg-purple-400 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
